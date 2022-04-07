@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando a DON</title>
+    <style>
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .botoes {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+            width: 400px;
+            height: 100px;
+            margin: 60px auto;
+        }
+        
+        .botoes #btn1,
+        #btn2 {
+            width: 500px;
+            height: 50px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <h1 class="titulo1">Manipular a DON</h1>
+        <p id="p">Deveras divertido realizar tal manipulação</p>
+        <h2>Mudando aqui também</h2>
+        <img id="img" src="./img/dia.jpg" alt="" width="170px" height="100px">
+
+
+    </div>
+    <div class="botoes">
+        <button id="btn1" onclick="modifcarParagrafo()">Botão 1</button>
+        <button id="btn2" onclick="modificarImagem()">Botão 2</button>
+    </div>
+
+    <script>
+        const p = document.getElementById("p")
+        const b = document.getElementById("btn1")
+        const b2 = document.getElementById("btn2")
+        const i = document.getElementById("img")
+
+        function modifcarParagrafo() {
+            p.style.color = "red"
+            p.style.fontFamily = "Comic Sans"
+            p.style.fontSize = "25pt"
+            p.style.border = "1px solid blue"
+            i.getElementById("img")
+        }
+
+        function modificarImagem() {
+            i.src + "./img/noite.jpg"
+            i.style.borderRadius = "50px"
+            i.style.width = "180px"
+            i.style.height = "50px"
+        }
+    </script>
+</body>
+
+</html>
